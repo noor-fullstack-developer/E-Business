@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FADESHPERE</title>
+    <link rel="shortcut icon" href="favicon.PNG" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="">
+    <div class="container">
+      <header>
+        <div class="title">
+          <a href="/">FADESHPERE</a>
+        </div>
+        <div class="icon-cart">
+          <img src="images/cart.png" alt="" />
+          <span>0</span>
+        </div>
+      </header>
+          <div id="app"></div>
+          <div class="product-controls">
+              <input type="text" id="searchInput" placeholder="Search products..." />
+              <select id="filter-price">
+                  <option value="">All Prices</option>
+                  <option value="0-200">Below $200</option>
+                  <option value="201-400">$200 - $400</option>
+                  <option value="401-9999">Above $400</option>
+              </select>
+          </div>
+    <div id="temporaryContent">
+        <div class="listProduct"></div>
+    </div>
+      <div id="contentTab">
+        check for error in ai ...
+      </div>
+      <button>Prev</button>
+    <div id="pagination"></div>
+      <button>Next</button>
+
+    <div class="cartTab">
+      <h1>Shopping Cart</h1>
+      <div class="listCart"></div>
+      <div class="coupon-section">
+  <input type="text" id="coupon-code" placeholder="Enter coupon code">
+  <button id="apply-coupon">Apply</button>
+</div>
+<p class="discount-value"></p>
+<p class="total-value">Total: $0.00</p>
+
+      <div class="cart-summary">
+      <div class="btn">
+        <button class="close">CLOSE</button>
+        <button class="checkOut">Check Out</button>
+      </div>
+    </div>
+
+    <script src="cart.js" type="module"> </script>
+    <script src="detail.js" type="module"></script>
+
+   
+  </body>
+</html>
