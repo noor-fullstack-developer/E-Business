@@ -104,6 +104,7 @@ body.activeTabCart .container {
 }
 .listProduct .item img {
   width: 90%;
+  height: 382px;
   filter: drop-shadow(0 50px 20px #0009);
 }
 .listProduct {
@@ -262,15 +263,46 @@ body.activeTabCart .container {
   justify-content: center;
   align-items: center;
 }
-#pagination button{
-  background-color: #d69736;
-  border: none;
-  padding: 10px 10px 10px 10px;
-  border-radius: 50rem;
+#pagination button.active {
+  background-color: #444; /* dark background */
+  color: white;
+  font-weight: bold;
+  border-radius: 1rem;
 }
-#pagination button:active{
-  background-color: #d69736;
+#pagination button {
+  border-radius: 12rem;
+  padding: 6px 12px;
+  margin: 2px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: large;
+}
+#pagination button:hover {
+  background-color: #ffffff;
+}
+#pagination-limit{
+  padding: 6px 12px;
   border: none;
-  padding: 10px 10px 10px 10px;
-  border-radius: 50rem;
+  background: #353432;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  color: #eee;
+  font-size: large;
+}
+label{
+  padding: 6px 12px;
+  border: none;
+  background: #353432;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 10px;
+  color: #eee;
+  font-size: large;
+  margin-bottom: 20px;
+}
+.pagination-controls {
+  border: 1px solid #ccc;
+  border-radius: 10rem;
+  margin-bottom: 20px;
 }

@@ -4,13 +4,13 @@ import cart from './cart.js';
 let app = document.getElementById('app');
 let temporaryContent = document.getElementById('temporaryContent');
 
-const productPerPage = 3;
+let productPerPage = 3; // default
 let livePage = 1;
 let filteredProducts = [...products];
 let searchQuery = "";
 let selectedPriceRange = "";
 
-// this is all Pagination + filter + search
+// Pagination + filter + search
 function getPaginationProduct(page) {
   const startIndex = (page - 1) * productPerPage;
   const endIndex = startIndex + productPerPage;
@@ -25,7 +25,7 @@ function renderPage(page) {
   const pageItems = getPaginationProduct(page);
 
   if (pageItems.length === 0) {
-    listProductHTML.innerHTML = "<p>No product avialable.</p>";
+    listProductHTML.innerHTML = "<p>No product available.</p>";
     return;
   }
 
@@ -46,6 +46,7 @@ function renderPage(page) {
   });
 }
 
+// Pagination with Next & Previous buttons
 function setupPagination() {
   const pagination = document.getElementById("pagination");
   if (!pagination) return;
@@ -53,6 +54,20 @@ function setupPagination() {
   pagination.innerHTML = "";
   const totalPages = Math.ceil(filteredProducts.length / productPerPage);
 
+  // Prev Button
+  const prevBtn = document.createElement("button");
+  prevBtn.innerText = "Prev";
+  prevBtn.disabled = livePage === 1;
+  prevBtn.addEventListener("click", () => {
+    if (livePage > 1) {
+      livePage--;
+      renderPage(livePage);
+      setupPagination();
+    }
+  });
+  pagination.appendChild(prevBtn);
+
+  // Number Buttons
   for (let i = 1; i <= totalPages; i++) {
     const btn = document.createElement("button");
     btn.innerText = i;
@@ -66,9 +81,22 @@ function setupPagination() {
 
     pagination.appendChild(btn);
   }
+
+  // Next Button
+  const nextBtn = document.createElement("button");
+  nextBtn.innerText = "Next";
+  nextBtn.disabled = livePage === totalPages;
+  nextBtn.addEventListener("click", () => {
+    if (livePage < totalPages) {
+      livePage++;
+      renderPage(livePage);
+      setupPagination();
+    }
+  });
+  pagination.appendChild(nextBtn);
 }
 
-// filter Applyes here 
+// Filter applies here
 function applyFilters() {
   filteredProducts = products.filter(p => {
     const matchesSearch = p.name.toLowerCase().includes(searchQuery);
@@ -90,6 +118,7 @@ function applyFilters() {
 function setupControls() {
   const searchInput = document.getElementById("searchInput");
   const priceSelect = document.getElementById("filter-price");
+  const paginationLimitSelect = document.getElementById("pagination-limit");
 
   if (searchInput) {
     searchInput.addEventListener("input", (e) => {
@@ -104,9 +133,17 @@ function setupControls() {
       applyFilters();
     });
   }
+
+  if (paginationLimitSelect) {
+    paginationLimitSelect.addEventListener("change", (e) => {
+      productPerPage = parseInt(e.target.value, 10);
+      livePage = 1;
+      applyFilters();
+    });
+  }
 }
 
-//tamplate loads again
+// Template loads again
 const loadTemplate = () => {
   fetch('/template.html')
     .then(response => response.text())
