@@ -17,11 +17,11 @@ const cart = () => {
   //  coupons which can be applied
   const coupons = {
     NOOR50: { type: "flat", value: 50 }, 
-    SAVE100: { type: "flat", value: 100 }, 
-    SAVE150: { type: "flat", value: 150 }, 
-    OFF10: { type: "percent", value: 10 }, 
-    OFF20: { type: "percent", value: 20 }, 
-    OFF30: { type: "percent", value: 30 }, 
+    NOOR100: { type: "flat", value: 100 }, 
+    NOOR150: { type: "flat", value: 150 }, 
+    NOOR10: { type: "percent", value: 10 }, 
+    NOOR20: { type: "percent", value: 20 }, 
+    NOOR30: { type: "percent", value: 30 }, 
   };
   
   // Open/Close cart tab
