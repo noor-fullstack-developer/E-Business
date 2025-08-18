@@ -1,6 +1,5 @@
-/* ------------------------------
- Global Styles
-------------------------------- */
+/* Global Styles
+ */
 :root {
   --bg-dark: #1e1f26;
   --bg-light: #2b2c34;
@@ -48,9 +47,7 @@ button {
   transition: transform 0.5s;
 }
 
-/* ------------------------------
- Header
-------------------------------- */
+/* Header */
 header {
   background: linear-gradient(135deg, var(--bg-light), #3a3b47);
   display: flex;
@@ -83,9 +80,7 @@ ul {
   color: var(--accent);
 }
 
-/* ------------------------------
- Cart Icon
-------------------------------- */
+/* Cart Icon */
 .icon-cart {
   position: relative;
 }
@@ -107,9 +102,7 @@ ul {
   box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
-/* ------------------------------
- Product List
-------------------------------- */
+/* Product List */
 .listProduct {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -167,9 +160,7 @@ ul {
   transform: scale(1.05);
 }
 
-/* ------------------------------
- Cart Sidebar
-------------------------------- */
+/* Cart Sidebar */
 .cartTab {
   position: fixed;
   right: -400px;
@@ -260,9 +251,7 @@ body.activeTabCart .container {
   cursor: default;
 }
 
-/* ------------------------------
- Controls (Search, Filters, Pagination)
-------------------------------- */
+/* Controls (Search, Filters, Pagination) */
 .product-controls {
   display: flex;
   justify-content: center;
@@ -329,9 +318,7 @@ label {
   color: #fff;
 }
 
-/* ------------------------------
- Responsive
-------------------------------- */
+/* Responsive */
 @media (max-width: 992px) {
   .listProduct {
     grid-template-columns: repeat(3, 1fr);
@@ -349,9 +336,7 @@ label {
   }
 }
 
-/* ------------------------------
- Dark Mode (Light Theme Variant)
-------------------------------- */
+/* Dark Mode (Light Theme Variant) */
 .dark-mode {
   background-color: #f1f1f1;
   color: #121212;
