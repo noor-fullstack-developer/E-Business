@@ -67,8 +67,15 @@ function setupPagination() {
   });
   pagination.appendChild(prevBtn);
 
-  // Number Buttons
-  for (let i = 1; i <= totalPages; i++) {
+  // --- Show only 3 pages at a time ---
+  let startPage = Math.max(1, livePage - 1);
+  let endPage = Math.min(totalPages, startPage + 2);
+
+  if (endPage - startPage < 2) {
+    startPage = Math.max(1, endPage - 2);
+  }
+
+  for (let i = startPage; i <= endPage; i++) {
     const btn = document.createElement("button");
     btn.innerText = i;
     if (i === livePage) btn.classList.add("active");
@@ -95,6 +102,7 @@ function setupPagination() {
   });
   pagination.appendChild(nextBtn);
 }
+
 
 // Filter applies here
 function applyFilters() {
