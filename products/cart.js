@@ -27,9 +27,7 @@ const cart = () => {
     NOOR30: { type: "percent", value: 30 },
   };
 
-  /* --------------------------------
-      Dark Mode Toggle
-  --------------------------------- */
+  /* Dark Mode Toggle */
   but.addEventListener("click", () => {
     const isDark = body.classList.toggle("dark-mode");
     localStorage.setItem("dark-mode", isDark);
@@ -42,9 +40,7 @@ const cart = () => {
     but.innerHTML = "🌞";
   }
 
-  /* --------------------------------
-      Cart Open/Close
-  --------------------------------- */
+  /* Cart Open/Close */
   iconCart.addEventListener("click", () => {
     body.classList.toggle("activeTabCart");
   });
@@ -52,9 +48,7 @@ const cart = () => {
     body.classList.remove("activeTabCart");
   });
 
-  /* --------------------------------
-      Update Cart (Add/Remove/Set)
-  --------------------------------- */
+  /* Update Cart (Add/Remove/Set) */
   const setProductInCart = (idProduct, value) => {
     const index = cart.findIndex((item) => item.product_id == idProduct);
 
@@ -70,9 +64,7 @@ const cart = () => {
     renderCart();
   };
 
-  /* --------------------------------
-      Render Cart
-  --------------------------------- */
+  /* Render Cart */
   const renderCart = () => {
     listCartHTML.innerHTML = "";
     let totalQuantity = 0;
@@ -116,9 +108,7 @@ const cart = () => {
     totalValueElement.innerText = `Total: $${finalTotal.toFixed(2)}`;
   };
 
-  /* --------------------------------
-      Apply Coupon
-  --------------------------------- */
+  /* Apply Coupon */
   const applyCoupon = () => {
     const code = couponInput.value.trim().toUpperCase();
     discountAmount = 0;
@@ -144,9 +134,6 @@ const cart = () => {
 
   applyCouponBtn.addEventListener("click", applyCoupon);
 
-  /* --------------------------------
-      LocalStorage Helpers
-  --------------------------------- */
   const saveCart = () => {
     localStorage.setItem("cart", JSON.stringify(cart));
   };
@@ -161,9 +148,6 @@ const cart = () => {
     renderCart();
   };
 
-  /* --------------------------------
-      Event Listeners for Buttons
-  --------------------------------- */
   document.addEventListener("click", (event) => {
     const target = event.target;
     const idProduct = target.dataset.id;
@@ -189,9 +173,6 @@ const cart = () => {
     }
   });
 
-  /* --------------------------------
-      Init
-  --------------------------------- */
   loadCart();
 };
 
