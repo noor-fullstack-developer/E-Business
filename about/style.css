@@ -49,6 +49,7 @@ button {
 header {
   background: linear-gradient(135deg, var(--bg-light), #3a3b47);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 15px 25px;

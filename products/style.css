@@ -51,6 +51,7 @@ button {
 header {
   background: linear-gradient(135deg, var(--bg-light), #3a3b47);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 15px 25px;
@@ -166,10 +167,11 @@ ul {
 /* Cart Sidebar */
 .cartTab {
   position: fixed;
-  right: -400px;
+  right: -425px;
   top: 0;
   bottom: 0;
-  width: 400px;
+  width: 420px;
+  height: 100vh;
   max-width: 100%;
   background: #20212b;
   color: var(--text-light);
@@ -181,11 +183,12 @@ ul {
 }
 
 body.activeTabCart .cartTab {
-  right: 0;
+  right: -200px;
+  left: auto;
 }
 
 body.activeTabCart .container {
-  transform: translateX(-250px);
+  transform: translateX(-180px);
 }
 
 .cartTab h1 {
@@ -202,6 +205,7 @@ body.activeTabCart .container {
 .cartTab button {
   background-color: var(--warning);
   font-weight: 600;
+  height: 30px;
 }
 
 .cartTab .close {
@@ -223,12 +227,28 @@ body.activeTabCart .container {
   grid-template-columns: 70px 150px 50px 1fr;
   gap: 10px;
   align-items: center;
-  padding: 10px 0;
+  padding: 20px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .listCart .item img {
   width: 100%;
+}
+#coupon-code {
+  padding: 10px 15px;
+  padding-right: 150px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background: var(--bg-light);
+}
+#apply-coupon {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 12px;
+  cursor: pointer;
 }
 
 .listCart .quantity {
@@ -259,8 +279,14 @@ body.activeTabCart .container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
   margin-bottom: 20px;
+}
+.advertisement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 #searchInput,
@@ -370,4 +396,8 @@ label {
 .dark-mode #pagination button.active {
   background-color: var(--accent);
   color: #fff;
+}
+.disabled{
+  opacity: 0.5;
+  pointer-events: none;
 }

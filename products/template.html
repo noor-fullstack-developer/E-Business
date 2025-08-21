@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FADESHPERE</title>
-    <link rel="shortcut icon" href="favicon.PNG" type="image/x-icon" />
+    <title>Products - FADESHPERE</title>
+    <link rel="shortcut icon" href="/favicon.PNG" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="">
@@ -15,10 +15,10 @@
         </div>
         <nav>
           <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/template.html">Products</a></li>
-            <li><a href="/about/index.html">About Us</a></li>
-            <li><a href="/contact/index.html">Contact Us</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products/index.html">Products</a></li>
+            <li><a href="/about/index.html">About</a></li>
+            <li><a href="/contact/index.html">Contact</a></li>
             <li>
               <div class="icon-cart">
                 <p class="cart-icon">Cart🛒</p>
@@ -29,7 +29,10 @@
         </nav>
           <button class="night but">🌙</button>
         
-      </header>
+        </header>
+        <div class="advertise">
+          <img src="images/tem-01.jpg" alt="Advertisement" class="advertisement">
+        </div>
           <div id="app"></div>
           <div class="product-controls">
               <input type="text" id="searchInput" placeholder="Search products..." />
@@ -39,15 +42,15 @@
                   <option value="201-400">$200 - $400</option>
                   <option value="401-9999">Above $400</option>
               </select>
+              <div class="pagination-controls pag">
+      <label for="pagination-limit">Items per page:</label>
+      <select id="pagination-limit">
+        <option value="3">3</option>
+        <option value="6">6</option>
+        <option value="9">9</option>
+      </select>
+    </div>
           </div>
-          <div class="pagination-controls">
-  <label for="pagination-limit">Items per page:</label>
-  <select id="pagination-limit">
-    <option value="3">3</option>
-    <option value="6">6</option>
-    <option value="9">9</option>
-  </select>
-</div>
 
     <div id="temporaryContent">
         <div class="listProduct"></div>

@@ -58,6 +58,8 @@ function setupPagination() {
   const prevBtn = document.createElement("button");
   prevBtn.innerText = "Prev";
   prevBtn.disabled = livePage === 1;
+  if (livePage === 1) prevBtn.classList.add("disabled");
+  else prevBtn.classList.add("prev");
   prevBtn.addEventListener("click", () => {
     if (livePage > 1) {
       livePage--;
@@ -93,6 +95,9 @@ function setupPagination() {
   const nextBtn = document.createElement("button");
   nextBtn.innerText = "Next";
   nextBtn.disabled = livePage === totalPages;
+  nextBtn.classList.add("next");
+  if (livePage === totalPages) nextBtn.classList.add("disabled");
+  else nextBtn.classList.add("next");
   nextBtn.addEventListener("click", () => {
     if (livePage < totalPages) {
       livePage++;
@@ -153,7 +158,7 @@ function setupControls() {
 
 // Template loads again
 const loadTemplate = () => {
-  fetch('/template.html')
+  fetch('template.html')
     .then(response => response.text())
     .then(html => {
       app.innerHTML = html;
@@ -165,7 +170,7 @@ const loadTemplate = () => {
       setupControls();
       applyFilters();
     })
-    .catch(err => console.error('Error loading template:', err));
+    .catch(err => console.error('Error loading :', err));
 };
 
 loadTemplate();
