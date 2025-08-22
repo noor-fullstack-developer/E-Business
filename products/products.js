@@ -1,80 +1,92 @@
 const products = [
   {
     id: 1,
-    name: "chex T-shirt",
+    name: "Urban Pulse",
     price: "500",
-    description: "Expertly rendered by Carl hansen & son",
+    description: "Discover bold streetwear that blends comfort with cutting-edge design. Stand out with vibrant colors and iconic patterns crafted for trendsetters. Upgrade your wardrobe with styles that make every move iconic.",
     image: "images/1.png",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 2,
-    name: "primeum T-shirt",
+    name: "Street Luxe Drop",
     price: "300",
-    description: "Expertly rendered by Carl hansen & son",
+    description: "Something iconic is on the way—get ready for our latest fashion drop. Coming soon: bold streetwear meets effortless luxury. Fresh styles, modern attitude. Stay tuned for the next big release. Prepare for the drop—urban fashion redefined. New vibes loading… your next style upgrade is almost here.",
     image: "images/2.png",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 3,
-    name: "jursey",
+    name: "Retro Varsity Vibes",
     price: "500",
-    description: "Expertly rendered by Carl hansen & son",
+    description: "A classic oversized varsity jersey reimagined for modern streetwear. Featuring bold “43” graphics, layered styling, and a vintage color palette, this piece blends sporty energy with casual urban cool. Perfect for effortless everyday fits that stand out.",
     image: "images/3.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 4,
-    name: "black udhi",
+    name: "Denim Script",
     price: "500",
-    description: "Expertly rendered by Carl hansen & son",
+    description: "A standout denim jacket with bold script embroidery across the back, merging street culture with timeless craftsmanship. Paired with a striped knit beanie, this look delivers effortless cool and individuality—perfect for those who want their outfit to speak louder than words.",
     image: "images/4.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 5,
-    name: "Faded jeans",
+    name: "“Reaven Inferno Denim",
     price: "200",
-    description: "Expertly rendered by Carl hansen & son",
+    description: "Crafted in Italy, the Reaven Inferno Denim features 3D embroidered flame motifs and bold gothic “Reaven” back pocket detailing. A fusion of luxury craftsmanship and rebellious streetwear energy, these jeans redefine statement denim with raw edge finishes and powerful design.",
     image: "images/5.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 6,
-    name: "leather overwear",
-    price: "800",
-    description: "Expertly rendered by Carl hansen & son",
+    name: "Crusader Leather Jacket",
+    price: "8000",
+    description: "The Crusader Leather Jacket fuses luxury craftsmanship with bold gothic edge. Made from premium black leather and detailed with striking white cross patches, it is a statement piece that balances timeless style with rebellious streetwear energy. Designed to stand out, this jacket elevates any fit into an iconic look.",
     image: "images/6.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 7,
-    name: "stylies shirt",
-    price: "200",
-    description: "Expertly rendered by Carl hansen & son",
+    name: "Rustic Rebel Patchwork Shirt",
+    price: "120 ",
+    description: "The Rustic Rebel Patchwork Shirt blends vintage aesthetics with modern streetwear energy. Designed with contrasting plaid and corduroy panels, raw distressed edges, and a rugged finish, this piece stands as a statement of individuality. Perfect for layering or wearing solo, it captures a raw, deconstructed vibe that is both stylish and unapologetic.",
     image: "images/7.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 8,
-    name: "Faded huddi",
-    price: "350",
-    description: "Expertly rendered by Carl hansen & son",
+    name: "Eclipse Gradient Jacket",
+    price: "160 ",
+    description: "The Eclipse Gradient Jacket merges bold design with sleek streetwear aesthetics. Featuring a smooth black-to-white gradient fade, structured silhouette, and subtle embroidered details, this piece is built to stand out. Lightweight yet striking, it is the perfect statement jacket for layering across seasons while keeping your fit elevated and unique.",
     image: "images/8.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 9,
-    name: "basic uddhi",
-    price: "400",
-    description: "Expertly rendered by Carl hansen & son",
+    name: "NY Casual Co-ord Set",
+    price: "1899 ",
+    description: "Step out in style with this NY beige co-ord set, featuring a button-up shirt and matching shorts. Designed for comfort and casual outings, it's lightweight, breathable, and trendy—perfect for a streetwear vibe.",
     image: "images/9.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 10,
-    name: "Spider cap",
-    price: "400",
-    description: "Expertly rendered by Carl hansen & son",
+    name: "Adventure Lion Graphic Tee & Shorts Set",
+    price: "42.99",
+    description: " :Quality Materials: Organic cotton, recycled insulation, water-resistant fabrics Inclusive Sizing: XS-XXL options across products Versatile Styling: Layering pieces for year-round wear Value Focus: Bundle deals and premium construction at accessible prices Care Instructions: Clear maintenance notes for longevity All products",
     image: "images/10.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 11,
-    name: "flame premium",
-    price: "400",
-    description: "Expertly rendered by Carl hansen & son",
+    name: "Striped Sweater & Bow Shorts Combo",
+    price: "38.99",
+    description: "Adorable and playful, this children's set includes a cozy white long-sleeve sweater with vibrant red, black, and white stripes and whimsical handwritten-style text. Complemented by red shorts featuring a charming white bow detail, and completed with sporty black/red/white sneakers, this outfit keeps your little one stylish and comfortable for playdates or family outings.",
     image: "images/11.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 12,
@@ -82,6 +94,7 @@ const products = [
     price: "250",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/12.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 13,
@@ -89,6 +102,7 @@ const products = [
     price: "700",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/13.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 14,
@@ -96,6 +110,7 @@ const products = [
     price: "1000",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/14.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 15,
@@ -103,13 +118,15 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/15.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 16,
-    name: "premium Blue flame",
+    name: "Adventure Lion Graphic Tee & Shorts Set",
     price: "370",
-    description: "Expertly rendered by Carl hansen & son",
+    description: "Embrace your wild side with this casual khaki tee and shorts set. The short-sleeve T-shirt features a bold lion graphic and 'ADVENTURE' text for a rugged, outdoorsy vibe. Paired with sleek black shorts, this set offers effortless style for weekend outings or relaxed hangouts. Hang it on your closet rack for easy access to instant adventure-ready looks!",
     image: "images/16.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 17,
@@ -117,6 +134,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/17.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 18,
@@ -124,6 +142,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/18.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 19,
@@ -131,6 +150,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/19.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 20,
@@ -138,6 +158,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/20.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 21,
@@ -145,6 +166,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/21.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 22,
@@ -152,6 +174,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/22.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 23,
@@ -159,6 +182,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/23.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 24,
@@ -166,6 +190,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/24.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 25,
@@ -173,6 +198,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/25.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 26,
@@ -180,6 +206,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/26.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 27,
@@ -187,6 +214,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/27.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 28,
@@ -194,6 +222,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/28.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 29,
@@ -201,6 +230,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/29.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 30,
@@ -208,6 +238,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/30.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 31,
@@ -215,6 +246,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/31.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 32,
@@ -222,6 +254,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/32.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 33,
@@ -229,6 +262,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/33.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 34,
@@ -236,6 +270,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/34.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 35,
@@ -243,6 +278,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/35.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 36,
@@ -250,6 +286,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/36.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 37,
@@ -257,6 +294,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/37.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 38,
@@ -264,6 +302,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/38.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 39,
@@ -271,6 +310,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/39.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 40,
@@ -278,6 +318,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/40.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 41,
@@ -285,6 +326,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/41.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 42,
@@ -292,6 +334,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/42.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 43,
@@ -299,6 +342,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/43.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 44,
@@ -306,6 +350,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/44.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 44,
@@ -313,6 +358,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/44.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 45,
@@ -320,6 +366,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/45.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 46,
@@ -327,6 +374,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/46.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 47,
@@ -334,6 +382,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/47.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 48,
@@ -341,6 +390,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/48.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 49,
@@ -348,6 +398,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/49.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 50,
@@ -355,6 +406,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/50.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 51,
@@ -362,6 +414,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/51.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 52,
@@ -369,6 +422,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/52.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 53,
@@ -376,6 +430,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/53.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 54,
@@ -383,6 +438,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/54.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 55,
@@ -390,6 +446,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/55.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 56,
@@ -397,6 +454,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/56.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 57,
@@ -404,6 +462,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/57.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 58,
@@ -411,6 +470,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/58.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 59,
@@ -418,6 +478,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/59.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 60,
@@ -425,6 +486,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/60.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 61,
@@ -432,6 +494,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/61.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 62,
@@ -439,6 +502,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/62.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 63,
@@ -446,6 +510,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/63.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 64,
@@ -453,6 +518,7 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/64.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
   {
     id: 65,
@@ -460,36 +526,47 @@ const products = [
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/65.jpg",
-  },{
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
+  },
+  {
     id: 66,
     name: "premium Blue flame",
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/66.jpg",
-  },{
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
+  },
+  {
     id: 67,
     name: "premium Blue flame",
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/67.jpg",
-  },{
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
+  },
+  {
     id: 68,
     name: "premium Blue flame",
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/68.jpg",
-  },{
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
+  },
+  {
     id: 69,
     name: "premium Blue flame",
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/69.jpg",
-  },{
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
+  },
+  {
     id: 70,
     name: "premium Blue flame",
     price: "370",
     description: "Expertly rendered by Carl hansen & son",
     image: "images/70.jpg",
+    Ship:"UPDATE OF SHIPMENT : : within 24 hours. Free returns on orders over $50.",
   },
 ];
 export default products;

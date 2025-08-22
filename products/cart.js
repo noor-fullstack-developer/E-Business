@@ -12,6 +12,7 @@ const cart = () => {
   const applyCouponBtn = document.querySelector("#apply-coupon");
   const discountValueElement = document.querySelector(".discount-value");
   const but = document.querySelector(".but");
+  const ClearBtn = document.querySelector(".Clear")
 
   // State
   let cart = [];
@@ -31,13 +32,13 @@ const cart = () => {
   but.addEventListener("click", () => {
     const isDark = body.classList.toggle("dark-mode");
     localStorage.setItem("dark-mode", isDark);
-    but.innerHTML = isDark ? "🌞" : "🌙";
+    but.innerHTML = isDark ? "☀️" : "🌙";
   });
 
   // Restore dark mode from localStorage
   if (localStorage.getItem("dark-mode") === "true") {
     body.classList.add("dark-mode");
-    but.innerHTML = "🌞";
+    but.innerHTML = "☀️";
   }
 
   /* Cart Open/Close */
@@ -47,6 +48,10 @@ const cart = () => {
   closeCart.addEventListener("click", () => {
     body.classList.remove("activeTabCart");
   });
+  ClearBtn.addEventListener("click", ()=>{
+    listCartHTML.innerHTML = "";
+    console.log("clear")
+  })
 
   /* Update Cart (Add/Remove/Set) */
   const setProductInCart = (idProduct, value) => {
